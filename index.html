@@ -367,6 +367,13 @@
 		});
 	});
 </script> -->
+<script>
+	var socket = io();
+        socket.on('end', (msg) => {
+		$("#clickRow").click();
+		//this.shutDown();
+	});
+</script>
 
 
 </html>
